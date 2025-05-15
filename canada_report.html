@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>캐나다 인구 분석 보고서</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 40px;
+      background-color: #fefefe;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    iframe {
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 600px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📊 캐나다 인구 분석 보고서</h1>
+  <p>보고서 생성일: 2025년 5월 15일</p>
+
+  <div class="section">
+    <h2>1. 개요</h2>
+    <p>
+      본 보고서는 Gapminder 데이터를 기반으로 캐나다의 인구와 기대수명 변화를 시각화하고,
+      그 추세를 분석한 내용을 담고 있습니다.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>2. Plotly 시각화</h2>
+    <p>아래는 연도별 캐나다 인구를 기대수명(lifeExp) 컬러 스케일로 나타낸 Plotly 인터랙티브 차트입니다.</p>
+    <iframe src="canada_chart.html"></iframe>
+  </div>
+
+  <div class="section">
+    <h2>3. 요약 데이터</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>연도</th>
+          <th>인구 (명)</th>
+          <th>기대수명 (년)</th>
+          <th>GDP/1인당 ($)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1952</td><td>14,000,000</td><td>68.75</td><td>11,000</td></tr>
+        <tr><td>1972</td><td>21,000,000</td><td>72.88</td><td>13,700</td></tr>
+        <tr><td>1992</td><td>28,000,000</td><td>76.86</td><td>23,100</td></tr>
+        <tr><td>2007</td><td>33,000,000</td><td>80.65</td><td>36,700</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>4. 결론</h2>
+    <p>
+      캐나다는 전반적으로 인구 증가와 기대수명의 상승이 동시에 나타났습니다.
+      이는 의료, 교육, 경제적 여건이 개선된 결과로 해석될 수 있습니다.
+    </p>
+  </div>
+
+</body>
+</html>
